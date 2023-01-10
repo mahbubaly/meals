@@ -1,0 +1,152 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.primary-text {
+    color: orange;
+
+}
+
+/* Manu and icon */
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(61, 143, 104);
+    padding: 0 20px;
+
+}
+
+.desset-manu ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+.desset-manu ul li {
+    list-style: none;
+
+}
+
+.desset-manu ul li a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 1em;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.desset-manu ul li a:hover {
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+/* Desserts containers */
+.dessert-titel {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(56, 156, 167), rgb(217, 202, 33), rgb(55, 163, 212), rgb(125, 125, 197));
+}
+
+
+
+
+.full-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+.container {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 177, 95);
+}
+
+.container img {
+    width: 100%;
+
+
+}
+
+.container p {
+    padding: 5px 0px;
+    text-align: justify;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.btn-order {
+    background-color: orange;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: rgb(231, 231, 231);
+}
+
+.btn-order:hover {
+    box-shadow: 5px 0px 5px black;
+}
+
+/* Responsive web */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav {
+        display:none;
+
+    }
+    .full-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .full-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .full-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .full-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
